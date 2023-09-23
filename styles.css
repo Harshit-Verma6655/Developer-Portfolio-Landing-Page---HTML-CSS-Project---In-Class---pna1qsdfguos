@@ -1,1 +1,87 @@
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.Hero{
+    color: white;
+    background-image: url("https://media.istockphoto.com/id/1488919446/photo/working-from-home-in-downtown-los-angeles.jpg?s=1024x1024&w=is&k=20&c=cIx2wwlTLn35Ld0Smd93mSJEpMMC-Dr5IJcvYB4So6Y=");
+    padding-bottom: 500px;
+    background-repeat: no-repeat;
+    
+   background-size: 100% 100%;
+}
+.Black{
+    display: flex;
+    text-align: center;
+    background-color: #000;
+    color: white;
+    font-size: 80px;
+    font-weight: 400;
+}
+.Black>div>h3>span{
+    font-size: 96px;
+}
+.Outer{
+    display: grid;
+    width: 100%;
+    gap: 1%;
+    justify-content: center;
+    padding: 0 7%;
+    grid-template-columns: repeat( auto-fit, minmax(340px, 1fr) );
+    margin-top: 40px;
+    align-self: center;
+}
+.card{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px 1px rgb(180, 177, 177);
+    margin-top: 15px;
+}
+.Outer>.card h3{
+    font-weight: 700;
+    /* height: 25vh; */
+    
+    padding: 15px;
+}
+.Outer>.card p{
+    padding: 15px;
+    font-weight: 500;
+}
+.Bottom{
+    display: flex;
+    margin-top: 55px;
+    color: white;
+    justify-content: space-around;
+    gap: 10%;
+    justify-content: space-around;
+}
+.Bottom .col1{
+background-color: rgb(7, 90, 7);
+padding: 25px;
+
+}
+.Bottom .col2{
+    background-color: rgb(125, 20, 12);
+    padding: 25px;
+    
+    }
+    @media (max-width:786px){
+        .Bottom{
+            display: flex;
+
+            flex-direction: column;
+        }
+        .Hero{
+            min-height: 50vh;
+        }
+        .Black{
+            font-size: 24px;
+        }
+    }
+
+
